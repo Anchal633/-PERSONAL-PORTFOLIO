@@ -37,4 +37,5 @@ Section dividers and animations to improve readability and flow
 Styling is handled exclusively using custom CSS, following modern design standards. Color palettes, spacing, font hierarchy, and visual contrast have all been carefully considered for both aesthetic quality and accessibility. The layout adapts fluidly across screen sizes using flexbox and grid, aided by media queries to maintain usability on mobile and tablet devices.
 
 #OUTPUT
+![Image](https://github.com/user-attachments/assets/4b7b39d9-fb7a-4ee8-81dc-09406b5ce436)
 
