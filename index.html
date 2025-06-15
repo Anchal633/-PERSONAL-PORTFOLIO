@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio - Sacha Dubois</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m numb3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-wrapper">
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <img src="profile.jpg" alt="Profile Image" class="profile-img" loading="lazy">
+                <div>
+                    <h1>Hello, I'm Sacha Dubois</h1>
+                    <p>I am a passionate web developer specializing in creating responsive, user-friendly applications. With a Master’s in Computer Science from State University and a Bachelor’s in Information Technology from Tech Institute, I’ve honed my skills in JavaScript, React, and Node.js. I received the Best Student Project Award for my work in web development. Currently, I’m interning at Tech Innovations, where I build intuitive interfaces and enhance user engagement.</p>
+                    <a href="resume.pdf" class="resume-btn">Download Resume</a>
+                    <div class="social-links">
+                       <a href="#"><img src="LinkedIn_icon.svg" alt="LinkedIn" loading="lazy"></a>
+            <a href="#"><img src="github.png" alt="GitHub" loading="lazy"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter" loading="lazy"></a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="html-5.png" alt="HTML5" loading="lazy">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="css.png" alt="CSS3" loading="lazy">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="js.png" alt="JavaScript" loading="lazy">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="react.png" alt="React" loading="lazy">
+                        <p>React</p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="node-js.png" alt="Node.js" loading="lazy">
+                        <p>Node.js</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Project One</h3>
+                        <p>Developed a responsive e-commerce website using HTML, CSS, and JavaScript, with a focus on user experience and performance.</p>
+                        <button class="view-project" data-project="one">View Project</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>Built a task management app with React and Node.js, featuring real-time updates and secure user authentication.</p>
+                        <button class="view-project" data-project="two">View Project</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Three</h3>
+                        <p>Created a personal blog platform with a custom CMS, using HTML, CSS, and JavaScript for dynamic content rendering.</p>
+                        <button class="view-project" data-project="three">View Project</button>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Blog Section -->
+            <section id="blog" class="blog-section">
+                <h2>Blog & Articles</h2>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <h3>How I Built My Portfolio Website</h3>
+                        <p class="blog-preview">Insights into the design and development process of creating a responsive portfolio for my internship.</p>
+                        <p class="blog-full hidden">I focused on using vanilla CSS for styling, ensuring mobile responsiveness, and adding interactive elements like a project modal. The process involved multiple iterations to balance aesthetics and functionality.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                    <div class="blog-card">
+                        <h3>Top 5 JavaScript Tips for Beginners</h3>
+                        <p class="blog-preview">Sharing practical JavaScript techniques learned during my internship projects.</p>
+                        <p class="blog-full hidden">Tips include mastering async/await, using arrow functions for concise code, leveraging ES6 destructuring, debugging with console methods, and understanding closures for better scope management.</p>
+                        <button class="read-more">Read More</button>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials-section">
+                <h2>Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"Sacha demonstrated excellent problem-solving skills during their internship, delivering high-quality code."</p>
+                        <p>- Jane Doe, Internship Mentor</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"A dedicated developer with a knack for creating user-friendly web applications."</p>
+                        <p>- John Smith, Project Lead</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+                <div class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                    <button id="contact-submit">Send Message</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="current-year"></span> Sacha Dubois. All rights reserved.</p>
+        <div class="footer-social-links">
+            <a href="#"><img src="LinkedIn_icon.svg" alt="LinkedIn" loading="lazy"></a>
+            <a href="#"><img src="github.png" alt="GitHub" loading="lazy"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter" loading="lazy"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+        });
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+
+        // Mobile Nav Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Project Modal
+        const projectButtons = document.querySelectorAll('.view-project');
+        const modal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const closeModal = document.getElementById('close-modal');
+        projectButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const project = button.dataset.project;
+                if (project === 'one') {
+                    modalTitle.textContent = 'Project One';
+                    modalDescription.textContent = 'A responsive e-commerce website built with HTML, CSS, and JavaScript, focusing on user experience and performance optimization.';
+                } else if (project === 'two') {
+                    modalTitle.textContent = 'Project Two';
+                    modalDescription.textContent = 'A task management app developed with React and Node.js, featuring real-time updates and secure user authentication.';
+                } else {
+                    modalTitle.textContent = 'Project Three';
+                    modalDescription.textContent = 'A personal blog platform with a custom CMS, built using HTML, CSS, and JavaScript for dynamic content rendering.';
+                }
+                modal.style.display = 'flex';
+            });
+        });
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Contact Form Submission
+        const contactSubmit = document.getElementById('contact-submit');
+        contactSubmit.addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('Message sent successfully! (This is a demo; no data is sent.)');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Blog Read More
+        const readMoreButtons = document.querySelectorAll('.read-more');
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.parentElement;
+                const preview = card.querySelector('.blog-preview');
+                const full = card.querySelector('.blog-full');
+                preview.classList.toggle('hidden');
+                full.classList.toggle('hidden');
+                button.textContent = full.classList.contains('hidden') ? 'Read More' : 'Show Less';
+            });
+        });
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = progress + '%';
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Dynamic Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
